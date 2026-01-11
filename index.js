@@ -12,7 +12,7 @@ const path = require('path');
 // Import routes
 const userRoutes = require('./routes/userRoutes');
 const bookingRoutes = require('./routes/bookingRoutes');
-const adminRoutes = require('./routes/adminRoutes');
+const adminRoutes = require('./routes/AdminRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -58,6 +58,6 @@ app.get('/api/cars', async (req, res) => {
 
 
 // Start the server
-app.listen(PORT, () => {
-  console.log(`Backend server running on http://localhost:${PORT}`);
+app.listen(PORT,'0.0.0.0', () => {
+  console.log(`Backend server running on http://0.0.0.0:${PORT}`);
 });

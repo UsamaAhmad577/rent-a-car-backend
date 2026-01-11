@@ -1,8 +1,8 @@
 const express = require('express');
 const Car = require('../models/Car');
 const Booking = require('../models/Booking');
-const User = require('../models/User');
-const { auth, admin } = require('../middleware/authMiddleware');
+const User = require('../models/user');
+const { auth, admin } = require('../middleware/AuthMiddleware');
 
 const router = express.Router();
 

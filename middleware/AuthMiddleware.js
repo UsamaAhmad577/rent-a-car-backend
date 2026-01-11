@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const User = require('../models/User');
+const User = require('../models/user');
 
 const JWT_SECRET = 'rentacar_jwt_secret_key_2024_usama_dev';
 
