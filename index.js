@@ -33,7 +33,7 @@ app.use('/api/admin', adminRoutes);
 // MongoDB Connection - FIXED THE TYPO
 //const MONGODB_URI = 'mongodb+srv://rentacar_user:Usama12345@rentacar.jsmnu0z.mongodb.net/rental?retryWrites=true&w=majority&appName=rentacar';
 // MongoDB Connection - TEMPORARY FIX
-const MONGODB_URI = process.env.MONGO_URI || 'mongodb+srv://rentacar_user:Usama12345@rentacar.jsmnu0z.mongodb.net/rental?retryWrites=true&w=majority&appName=rentacar';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://rentacar_user:Usama12345@rentacar.jsmnu0z.mongodb.net/rental?retryWrites=true&w=majority&appName=rentacar';
 
 mongoose.connect(MONGODB_URI)
   .then(() => {
